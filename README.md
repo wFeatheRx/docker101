@@ -16,7 +16,8 @@
 1. 某一種語言的基礎程式設計能力 (e.g. `python`, `Java`, `nodejs`)
 2. 會操作 windows/Mac OS
 3. 能看懂基本的英文
-4. git 基本語法 (`git clone`)  
+4. git 基本語法 (`git clone`)
+
 以下是建議：  
 1. 使用過某種 Linux distro (e.g. ubuntu, RHEL)
 2. 不排斥使用 CLI 
@@ -24,10 +25,10 @@
 ## 安裝與部署
 ### 系統需求
 - **作業系統**：Windows/MacOs
-- **所需硬體**：
+- **所需硬體**：  
  - 記憶體：至少4 GB（建議8 GB以上）
- - 磁碟空間：至少10 GB可用空間
-- 主要安裝 Docker Desktop 使用
+ - 磁碟空間：至少10 GB 可用空間
+- 主要安裝 `Docker Desktop` 使用
   
 
 ## 主要功能
