@@ -16,7 +16,7 @@
 1. 某一種語言的基礎程式設計能力 (e.g. `python`, `Java`, `nodejs`)
 2. 會操作 windows/Mac OS
 3. 能看懂基本的英文
-4. git 基本語法 (`git clone`)
+4. git 基本語法 (`git clone`)  
 以下是建議：  
 1. 使用過某種 Linux distro (e.g. ubuntu, RHEL)
 2. 不排斥使用 CLI 
