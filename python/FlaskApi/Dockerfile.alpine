@@ -1,0 +1,23 @@
+# 使用 Python 3.9 的 Alpine 映像
+FROM python:3.9-alpine
+
+# 安裝 git 和必要的編譯套件（Alpine 使用 apk）
+RUN apk add --no-cache git gcc musl-dev libffi-dev
+
+# 設定工作目錄
+WORKDIR /app
+
+# 從 GitHub 複製程式碼到 /app/docker101
+RUN git clone https://github.com/wFeatheRx/docker101.git /app/docker101
+
+# 進入複製的專案目錄
+WORKDIR /app/docker101
+
+# 安裝依賴套件
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 暴露 5000 port
+EXPOSE 5000
+
+# 設定容器啟動時執行的命令
+CMD ["python", "app.py"]
