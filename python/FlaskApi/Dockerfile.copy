@@ -1,0 +1,18 @@
+# 使用官方的 Python 3.9 映像檔作為基礎映像
+FROM python:3.9-slim
+
+# 設定工作目錄
+WORKDIR /app
+
+# 複製當前目錄的檔案到容器內的 /app 目錄
+COPY . /app
+
+# 安裝 Flask
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 暴露 5000 端口
+EXPOSE 5000
+
+# 設定容器啟動時執行的命令
+CMD ["python", "app.py"]
+
