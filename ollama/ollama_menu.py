@@ -3,7 +3,7 @@ import json
 import sys
 
 # 支援從命令列參數傳入 OLLAMA_URL，否則使用預設值
-OLLAMA_URL = sys.argv[1] if len(sys.argv) > 1 else "http://localhost:11434"
+OLLAMA_URL = sys.argv[1] if len(sys.argv) > 1 else "http://172.16.147.161:32767"
 
 def generate_text():
     prompt = input("請輸入提示詞 (prompt): ")
@@ -144,4 +144,3 @@ def main_menu():
 
 if __name__ == "__main__":
     main_menu()
-
