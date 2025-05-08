@@ -12,5 +12,5 @@ docker run -d -p 5002:5000 --name clone docker.io/wfeatherx/flaskapi:clone
 
 ## Alpine Version  
 
-docker build -f Dockerfile.alpine -t docker.io/wfeatherx/flaskapi:alpine .
+docker build -f Dockerfile.alpine -t docker.io/wfeatherx/flaskapi:alpine .  
 docker run -d -p 5003:5000 --name alpine docker.io/wfeatherx/flaskapi:alpine
