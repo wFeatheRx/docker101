@@ -8,10 +8,10 @@ RUN apt-get update && apt-get install -y git && apt-get clean
 RUN git clone https://github.com/wFeatheRx/docker101.git /app
 
 # 設定工作目錄
-WORKDIR /app
+WORKDIR /app/python/FlaskApi/
 
 # 安裝依賴套件
-RUN pip install --no-cache-dir -r /app/python/FlaskApi/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # 暴露 5000 port
 EXPOSE 5001
