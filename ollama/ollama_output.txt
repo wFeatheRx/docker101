@@ -1,0 +1,52 @@
+===== Ollama API 操作選單 =====
+1. 單輪文字產生 (/api/generate)
+2. 多輪聊天 (/api/chat)
+3. 取得模型列表 (/api/tags)
+4. 拉取模型 (/api/pull)
+5. 刪除模型 (/api/delete)
+6. 建立自定模型 (/api/create)
+7. 文字嵌入向量 (/api/embeddings)
+0. 離開
+請輸入選項：2
+模型名稱 (預設 llama3):
+輸入 'exit' 結束聊天
+你：你好
+AI：👋你好！我是 Chatbot，很高兴见到你！😊
+你：你會寫程式嗎，給我一個 python code
+AI：哈哈，我可以！Python是一個非常流行的programming language，我喜歡寫Python code。下面是一個簡單的 Python code，演示了一個基本的計算器：
+
+```python
+def calculate():
+    print("Simple Calculator")
+    while True:
+        print("\n1. Addition")
+        print("2. Subtraction")
+        print("3. Multiplication")
+        print("4. Division")
+        choice = input("Enter your choice (1/2/3/4) or 'q' to quit: ")
+
+        if choice == 'q':
+            break
+
+        num1 = float(input("Enter first number: "))
+        operator = input("Enter operator (+, -, *, /): ")
+        num2 = float(input("Enter second number: "))
+
+        if operator == '+':
+            print(num1, "+", num2, "=", num1 + num2)
+        elif operator == '-':
+            print(num1, "-", num2, "=", num1 - num2)
+        elif operator == '*':
+            print(num1, "*", num2, "=", num1 * num2)
+        elif operator == '/':
+            if num2 != 0:
+                print(num1, "/", num2, "=", num1 / num2)
+            else:
+                print("Error! Division by zero is not allowed.")
+        else:
+            print("Invalid operator. Please try again.")
+
+calculate()
+```
+
+這個程式碼創建了一個基本的計算器，可以進行加減乘除運算。輸入`q`以退出。
