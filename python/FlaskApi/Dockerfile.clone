@@ -4,17 +4,17 @@ FROM python:3.9-slim
 # 安裝 git
 RUN apt-get update && apt-get install -y git && apt-get clean
 
-# 設定工作目錄
-WORKDIR /app
-
 # 從 GitHub 複製程式碼（請改成你的 repo）
 RUN git clone https://github.com/wFeatheRx/docker101.git /app
+
+# 設定工作目錄
+WORKDIR /app/python/FlaskApi/
 
 # 安裝依賴套件
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 暴露 5000 port
-EXPOSE 5000
+EXPOSE 5001
 
 # 設定容器啟動時執行的命令
 CMD ["python", "app.py"]
